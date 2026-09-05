@@ -1,0 +1,15 @@
+server 192.168.58.3 {
+    keys { transfer-key; };
+};
+
+zone "empresa.local" {
+    type slave;
+    masters { 192.168.58.3 key transfer-key; };
+    file "/var/cache/bind/db.empresa.local.slave";
+};
+
+zone "58.168.192.in-addr.arpa" {
+    type slave;
+    masters { 192.168.58.3 key transfer-key; };
+    file "/var/cache/bind/db.192.168.58.slave";
+};

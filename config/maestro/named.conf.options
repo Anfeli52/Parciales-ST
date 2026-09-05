@@ -1,0 +1,60 @@
+logging {
+    channel c_queries {
+        file "/var/log/named/queries.log" versions 5 size 10m;
+        severity info;
+        print-time yes;
+        print-category yes;
+        print-severity yes;
+    };
+    channel c_transfers {
+        file "/var/log/named/transfers.log" versions 5 size 10m;
+        severity info;
+        print-time yes;
+        print-category yes;
+        print-severity yes;
+    };
+    channel c_security {
+        file "/var/log/named/security.log" versions 5 size 10m;
+        severity info;
+        print-time yes;
+        print-category yes;
+        print-severity yes;
+    };
+
+    category queries    { c_queries; };
+    category xfer-in    { c_transfers; };
+    category xfer-out   { c_transfers; };
+    category notify     { c_transfers; };
+    category security   { c_security; };
+    category rate-limit { c_security; };
+};
+
+acl "red-local" {
+    192.168.58.0/24;
+};
+
+options {
+    directory "/var/cache/bind";
+
+    // --- Hardening ---
+    recursion no;
+    allow-query { red-local; };
+    allow-query-cache { none; };
+    listen-on { 127.0.0.1; 192.168.58.3; };
+    dnssec-validation auto;
+
+    // --- NOTIFY hacia el esclavo (autenticado con TSIG) ---
+    notify yes;
+    also-notify { 192.168.58.2 key transfer-key; };
+
+    // --- Response Rate Limiting ---
+    rate-limit {
+        responses-per-second 5;
+        window 5;
+        log-only no;
+    };
+
+    querylog yes;
+};
+
+include "/etc/bind/tsig-key.conf";
