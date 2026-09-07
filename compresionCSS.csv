@@ -1,0 +1,7 @@
+Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
+estilos.css,169921,Sin comprimir (base),169921,1.000,0.00%,0.003548
+estilos.css,169921,gzip nivel 1,8026,0.047,95.28%,0.006573
+estilos.css,169921,gzip nivel 6,7811,0.046,95.40%,0.004495
+estilos.css,169921,gzip nivel 9,7704,0.045,95.47%,0.010829
+estilos.css,169921,brotli calidad 5,3458,0.020,97.96%,0.008313
+estilos.css,169921,brotli calidad 11,3445,0.020,97.97%,0.779242
