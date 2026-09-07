@@ -1,0 +1,8 @@
+Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
+foto.jpg,1048576,Sin comprimir (base),1048576,1.000,0.00%,5.011753
+foto.jpg,1048576,gzip nivel 1,1048576,1.000,0.00%,0.006179
+foto.jpg,1048576,gzip nivel 6,1048576,1.000,0.00%,5.016449
+foto.jpg,1048576,gzip nivel 9,1048576,1.000,0.00%,5.025642
+foto.jpg,1048576,brotli calidad 5,1048576,1.000,0.00%,5.012664
+foto.jpg,1048576,brotli calidad 11,1048576,1.000,0.00%,0.015696
+
