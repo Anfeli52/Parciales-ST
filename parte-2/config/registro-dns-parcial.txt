@@ -1,0 +1,3 @@
+parcial IN  A       192.168.58.4
+parcial IN  AAAA    fd00:58:168:192::4
+
