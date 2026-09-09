@@ -1,7 +1,0 @@
-Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
-index.html,238936,Sin comprimir (base),238936,1.000,0.00%,0.014965
-index.html,238936,gzip nivel 1,13311,0.055,94.43%,0.017459
-index.html,238936,gzip nivel 6,12921,0.054,94.59%,0.010800
-index.html,238936,gzip nivel 9,12695,0.053,94.69%,0.016525
-index.html,238936,brotli calidad 5,5643,0.023,97.64%,0.027007
-index.html,238936,brotli calidad 11,5732,0.024,97.60%,1.096249

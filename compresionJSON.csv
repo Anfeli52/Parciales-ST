@@ -1,7 +1,0 @@
-Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
-datos.json,457800,Sin comprimir (base),457800,1.000,0.00%,0.003657
-datos.json,457800,gzip nivel 1,49567,0.108,89.17%,0.008743
-datos.json,457800,gzip nivel 6,50340,0.110,89.00%,0.010606
-datos.json,457800,gzip nivel 9,49940,0.109,89.09%,0.046698
-datos.json,457800,brotli calidad 5,15531,0.033,96.61%,0.023020
-datos.json,457800,brotli calidad 11,11384,0.024,97.51%,2.189023

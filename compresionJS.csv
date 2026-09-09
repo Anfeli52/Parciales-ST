@@ -1,7 +1,0 @@
-Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
-app.js,252802,Sin comprimir (base),252802,1.000,0.00%,0.003282
-app.js,252802,gzip nivel 1,25068,0.099,90.08%,0.008319
-app.js,252802,gzip nivel 6,25585,0.101,89.88%,0.006093
-app.js,252802,gzip nivel 9,25069,0.099,90.08%,0.022697
-app.js,252802,brotli calidad 5,8533,0.033,96.62%,0.015122
-app.js,252802,brotli calidad 11,10123,0.040,96.00%,1.112622
