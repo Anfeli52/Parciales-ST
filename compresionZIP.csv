@@ -1,0 +1,7 @@
+Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
+paquete.zip,2097152,Sin comprimir (base),2097152,1.000,0.00%,0.006127
+paquete.zip,2097152,gzip nivel 1,2097152,1.000,0.00%,0.049145
+paquete.zip,2097152,gzip nivel 6,2097152,1.000,0.00%,0.005088
+paquete.zip,2097152,gzip nivel 9,2097152,1.000,0.00%,0.005568
+paquete.zip,2097152,brotli calidad 5,2097152,1.000,0.00%,0.004871
+paquete.zip,2097152,brotli calidad 11,2097152,1.000,0.00%,0.005135

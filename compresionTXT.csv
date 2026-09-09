@@ -1,0 +1,7 @@
+Recurso,Tamaño Original (B),Algoritmo / nivel,Tamaño Comprimido (B),Ratio,Ahorro %,Tiempo / CPU (s)
+lorem.txt,1968894,Sin comprimir (base),1968894,1.000,0.00%,0.048855
+lorem.txt,1968894,gzip nivel 1,80153,0.040,95.93%,0.026284
+lorem.txt,1968894,gzip nivel 6,77231,0.039,96.08%,0.086664
+lorem.txt,1968894,gzip nivel 9,75651,0.038,96.16%,0.111873
+lorem.txt,1968894,brotli calidad 5,27849,0.014,98.59%,0.105452
+lorem.txt,1968894,brotli calidad 11,30305,0.015,98.46%,10.131236
